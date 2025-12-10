@@ -1,0 +1,18 @@
+<div class="all-combinations-page">
+  <h1>All Combinations</h1>
+  <div *ngIf="combinations; else noCombinations">
+    <app-combinations-list [combinations]="combinations.permutations"></app-combinations-list>
+    <app-pagination-controls [hasNext]="combinations.hasNext" [hasPrevious]="combinations.hasPrevious"
+      [currentPage]="currentPage" [totalPages]="totalPages" (nextPage)="nextPage()" (previousPage)="previousPage()"
+      (firstPage)="goToPage(1)" (lastPage)="goToPage(totalPages)"
+      (goToPage)="goToPage($event)"></app-pagination-controls>
+  </div>
+  <ng-template #noCombinations>
+    <p>No combinations available. Please start a new session.</p>
+  </ng-template>
+  <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+  <button (click)="backToSingle()" *ngIf="combinations">
+    Back to single view
+  </button>
+
+</div>

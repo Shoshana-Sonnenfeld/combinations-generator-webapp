@@ -1,0 +1,12 @@
+/* Basic styling for the single combination page */
+.single-combination-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}

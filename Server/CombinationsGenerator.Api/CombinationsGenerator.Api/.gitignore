@@ -1,0 +1,40 @@
+# Build outputs
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Rider / VS Code
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# OS junk
+Thumbs.db
+.DS_Store
+
+# Temp
+*.tmp
+*.cache
+*.bak
+
+# User secrets
+secrets.json
+appsettings.Development.json
+
+# Test results
+TestResults/
+
+# Publish output
+publish/
+
+# NuGet
+packages/
+*.nupkg

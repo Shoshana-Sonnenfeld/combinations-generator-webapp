@@ -1,0 +1,67 @@
+# Build outputs
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Rider / VS Code
+.idea/
+.vscode/
+
+# Logs
+*.log
+logs
+
+# OS junk
+Thumbs.db
+.DS_Store
+
+# Temp
+*.tmp
+*.cache
+*.bak
+
+# User secrets
+secrets.json
+appsettings.Development.json
+
+# Test results
+TestResults/
+
+# Publish output
+publish/
+
+# NuGet
+packages/
+*.nupkg
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Angular
+.angular/cache
+.angular/config.json
+
+# IDEs
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+# Compiled files
+dist/
+build/
+
+# Environment variables
+.env
+
+# Coverage
+coverage/

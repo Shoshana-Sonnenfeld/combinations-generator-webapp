@@ -1,0 +1,24 @@
+<div class="pagination-controls">
+  <button (click)="goToFirstPage()" [disabled]="currentPage === 1">First</button>
+  <button (click)="goToPreviousPage()" [disabled]="!hasPrevious">Previous</button>
+  <span>Page {{ currentPage }} of {{ totalPages }}</span>
+  <button (click)="goToNextPage()" [disabled]="!hasNext">Next</button>
+  <button (click)="goToLastPage()" [disabled]="currentPage === totalPages">Last</button>
+</div>
+<div class="go-to-page">
+  <label for="pageInput">Go to page:</label>
+  <input
+    id="pageInput"
+    type="number"
+    min="1"
+    [max]="totalPages"
+    [(ngModel)]="targetPage"
+    placeholder="Enter page number"
+  />
+  <button
+    (click)="goToSpecificPage(targetPage)"
+    [disabled]="!targetPage || targetPage < 1 || targetPage > totalPages"
+  >
+    Go
+  </button>
+</div>

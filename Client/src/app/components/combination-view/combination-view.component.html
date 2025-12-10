@@ -1,0 +1,6 @@
+<div class="combination-view" *ngIf="combination">
+  <p><b>Combination #{{ combination.index }}:</b> {{ combination.values }}</p>
+</div>
+<div class="no-combination" *ngIf="!combination">
+  <p>No combination to display.</p>
+</div>

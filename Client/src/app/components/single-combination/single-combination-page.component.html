@@ -1,0 +1,24 @@
+<div class="single-combination-page">
+  <h1>קומבינציה בודדת</h1>
+
+  <p *ngIf="totalPermutations">
+    סה"כ אפשרויות: {{ totalPermutations | number:'1.0-0' }}
+  </p>
+
+  <div *ngIf="!currentCombination; else combinationView">
+    <p>אין קומבינציה זמינה. לחץ על "הבא" כדי לקבל את הקומבינציה הראשונה.</p>
+  </div>
+
+  <ng-template #combinationView>
+    <app-combination-view [combination]="currentCombination"></app-combination-view>
+  </ng-template>
+
+  <app-error-message [message]="errorMessage"></app-error-message>
+
+  <div class="button-group">
+    <button (click)="getNextCombination()">הבא</button>
+    <button (click)="resetSession()">איפוס</button>
+    <button (click)="switchToAllCombinations()">כל הקומבינציות</button>
+
+  </div>
+</div>

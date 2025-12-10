@@ -1,0 +1,18 @@
+<div class="combinations-list">
+
+  <h2>All Combinations</h2>
+
+  <!-- אם אין נתונים -->
+  <div *ngIf="!combinations?.length" class="no-combinations">
+    No combinations available.
+  </div>
+
+  <!-- אם יש נתונים -->
+  <ul *ngIf="combinations?.length">
+    <li *ngFor="let combination of combinations">
+    <b>Combination #{{ combination?.globalIndex }}: </b>  
+      {{ combination?.permutation?.join(', ') || 'Invalid combination' }}
+    </li>
+  </ul>
+
+</div>

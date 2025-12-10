@@ -1,0 +1,17 @@
+<div class="start-session">
+  <h1>Start Combination Generator</h1>
+  <form (ngSubmit)="startSession()">
+    <label for="n">Enter a number (1-20):</label>
+    <input
+      type="number"
+      id="n"
+      [(ngModel)]="n"
+      name="n"
+      required
+      min="1"
+      max="20"
+    />
+    <button type="submit">Start</button>
+  </form>
+  <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+</div>

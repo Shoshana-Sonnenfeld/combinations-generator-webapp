@@ -1,0 +1,17 @@
+/* Basic styling for pagination controls */
+.pagination-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+span {
+  font-size: 14px;
+}

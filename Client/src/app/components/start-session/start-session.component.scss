@@ -1,0 +1,18 @@
+/* Basic styling for the start session component */
+.start-session {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
