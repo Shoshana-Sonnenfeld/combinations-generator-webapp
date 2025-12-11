@@ -38,3 +38,6 @@ publish/
 # NuGet
 packages/
 *.nupkg
+
+
+launchSettings.json
